@@ -1,20 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legal Solution</title>
     <!-- css -->
     <link rel="stylesheet" href="styles/style.css">
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/c0c262fa2c.js" crossorigin="anonymous"></script>
     <!-- cdn tailwind daisy -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        // background color
+                        'primary-bg' : '#B68C5A',
+                        // text
+                        'text-p' : '#707070',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 <body>
     <!-- header part -->
-    <header></header>
+    <header class="md:container mx-auto mb-20">
+        <!-- navbar -->
+        <nav class="navbar bg-base-100 my-10 poppins">
+            <div class="navbar-start">
+                <img class="" src="images/logo2.png" alt="">       
+            </div>
+            <div class="navbar-center hidden lg:flex text-lg text-text-p">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>Service<i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a>Cases<i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a>Blog<i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a>Contact Us<i class="fa-solid fa-chevron-right"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-end ">
+                <a class="text-xl text-white font-semibold bg-primary-bg py-5 px-8 rounded-lg">Free Consultation</a>
+            </div>
+        </nav>
+    </header>
     <!-- main part -->
-    <main></main>
+    <main class="md:container mx-auto mb-20"></main>
     <!-- footer part -->
     <footer></footer>
 </body>

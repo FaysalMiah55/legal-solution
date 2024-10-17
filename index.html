@@ -19,11 +19,13 @@
                         clifford: '#da373d',
                         // background color
                         'primary-bg' : '#B68C5A',
+                        'secondary-bg' : '#111111',
                         // text
                         'text-st' : '#414040',
                         'text-p' : '#707070',
                         // border
                         'bc' : '#E7E7E7',
+                        'bc-2' : '#CFCFCF',
                     }
                 }
             }
@@ -65,9 +67,11 @@
             </div>
         </div>
     </header>
+
+
     <!-- main part -->
     <main class="md:container mx-auto mb-20">
-        <!-- practice area -->
+        <!-- practice section -->
         <section class="mb-12">
             <!-- text content -->
             <div class="text-center w-8/12 mx-auto space-y-6 ">
@@ -144,7 +148,8 @@
                 </div>
             </div>
         </section>
-        <!-- client -->
+
+        <!-- client section-->
         <section class="mb-12">
             <!-- text content -->
             <div class="text-center w-8/12 mx-auto space-y-6 mb-12">
@@ -209,8 +214,9 @@
                 </div>
             </div>
         </section>
-        <!-- faq -->
-        <section class="mx-auto mb-12">
+
+        <!-- faq section-->
+        <section class="mb-12">
             <!-- text content -->
             <div class="text-center w-8/12 mx-auto space-y-6 mb-12">
                 <h2 class="eb-garamond text-5xl text-text-st font-extrabold">Frequently Asked Any Questions</h2>
@@ -253,8 +259,116 @@
                 </div>
             </div>
         </section>
+
+        <!-- contact section -->
+        <section class="mb-12">
+            <!-- text content -->
+            <div class="text-center w-8/12 mx-auto space-y-6 mb-12">
+                <h2 class="eb-garamond text-5xl text-text-st font-extrabold">Contact With Us</h2>
+                <p class="text-text-p text-lg">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            </div>
+            <!-- contact and input content -->
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+                <!-- contact -->
+                <div class="grid grid-cols-1 md:grid-cols-2  gap-0 m-0 p-3">
+                    <!-- card-1 -->
+                    <div class="card bg-base-100 w-full m-0 border-b border-r rounded-none bc-2 p-14">
+                        <figure>
+                            <img src="images/address.png" />
+                        </figure>
+                        <div class="card-body text-center items-center gap-6">
+                            <h2 class="card-title eb-garamond text-2xl text-text-st font-extrabold">Address</h2>
+                            <p class="text-text-p text-lg">A108 Adam Street, <br> 
+                                New York, NY 535022</p>
+                        </div>
+                    </div>
+                    <!-- card-2 -->
+                    <div class="card bg-base-100 w-full m-0 border-b rounded-none bc-2 p-14">
+                        <figure>
+                            <img src="images/call.png" />
+                        </figure>
+                        <div class="card-body text-center items-center gap-6">
+                            <h2 class="card-title eb-garamond text-2xl text-text-st font-extrabold">Call Us</h2>
+                            <p class="text-text-p text-lg">+88 01750 00 00 00 <br>
+                                +88 01750 00 00 00</p>
+                        </div>
+                    </div>
+                    <!-- card-3 -->
+                    <div class="card bg-base-100 w-full m-0 border-r rounded-none bc-2 p-14">
+                        <figure>
+                            <img src="images/email.png" />
+                        </figure>
+                        <div class="card-body text-center items-center gap-6">
+                            <h2 class="card-title eb-garamond text-2xl text-text-st font-extrabold">Email Us</h2>
+                            <p class="text-text-p text-lg">info@gmail.com <br>
+                                info@gmail.com</p>
+                        </div>
+                    </div>
+                    <!-- card-4 -->
+                    <div class="card bg-base-100 w-full m-0 rounded-none bc-2 p-14">
+                        <figure>
+                            <img src="images/time.png" />
+                        </figure>
+                        <div class="card-body text-center items-center gap-6">
+                            <h2 class="card-title eb-garamond text-2xl text-text-st font-extrabold">Working Hours</h2>
+                            <p class="text-text-p text-lg">Mon-Fri: 9AM to 5PM <br>
+                                Sunday: 9AM to 1 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- input -->
+                <div class="flex flex-col gap-8 p-2">
+                    <input type="text" placeholder="Your Name" class="input input-bordered w-full max-w-xl" />
+                    <input type="email" placeholder="Your Email" class="input input-bordered w-full max-w-xl" />
+                    <input type="text" placeholder="Your Subject" class="input input-bordered w-full max-w-xl" />
+                    <textarea placeholder="Your Message" class="textarea textarea-bordered textarea-xl w-full max-w-xl"></textarea>
+                    <div>
+                        <button class="text-xl text-white font-semibold bg-primary-bg py-3 px-8 rounded-lg w-full mt-20">Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+
     <!-- footer part -->
-    <footer></footer>
+    <footer class="footer bg-secondary-bg  text-neutral-content p-28">
+        <nav class="w-64">
+            <a href=""><img src="images/logo.png" alt=""></a>
+            <p class="mt-8 text-lg text-text-p">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+        </nav>
+        <nav class="w-32">
+            <h6 class="eb-garamond text-white text-2xl font-extrabold">Company</h6>
+            <ul class="mt-8 flex flex-col gap-3 mt-8 text-lg text-text-p">
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </ul>
+        </nav>
+        <nav class="w-56">
+            <h6 class="eb-garamond text-white text-2xl font-extrabold">Legal</h6>
+            <p class="mt-8 text-lg text-text-p">555 4th 5t NW, Washington
+                DC 20530, United States</p>
+            <p class="mt-8 text-lg text-text-p">+88 01750 000 000
+                +88 01750 000 000</p>
+            <p class="mt-8 text-lg text-text-p">info@gmail.com
+                info@gmail.com</p>
+            
+        </nav>
+        <nav class="w-80">
+            <h6 class="eb-garamond text-white text-2xl font-extrabold">Subscribe</h6>
+            <p class="mt-8 text-lg text-text-p">Subscribe for our latest & Articles. We Won’t Give You Spam Mails</p>          
+            <div class="join mt-6">
+                <input class="input input-bordered join-item w-3/4" placeholder="Email Address" />
+                <button class="btn join-item text-white font-semibold bg-primary-bg  rounded-lg">
+                    <svg width="20.655518" height="20.656738" viewBox="0 0 20.6555 20.6567" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path id="Vector" d="M0.75 7.35C6.71 4.08 13.19 1.84 19.9 0.75C18.81 7.46 16.57 13.94 13.3 19.9L8.95 11.69L0.75 7.35ZM8.95 11.69L14.25 6.39" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </footer>
+
 </body>
 </html>
